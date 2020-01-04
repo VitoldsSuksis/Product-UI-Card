@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>UI Card</title>
+</head>
+<body>
+    
+    <div class="card">
+        <div class="top-section">
+            <img id="image-container" src="/phones.jpg" alt="">
+            <div class="nav">
+                <img onclick="change_img(this)" src="/screen.jpg" alt="">
+                <img onclick="change_img(this)" src="/phones.jpg" alt="">
+                <img onclick="change_img(this)" src="/camera.jpg" alt="">
+            </div>
+            <div class="price">$200</div>
+        </div>
+        <div class="product-info">
+            <div class="name">Phones</div>
+            <div class="dis">Awesome Mobile Phones</div>
+            <a class="Btn" href="#">Add to Cart</a>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        
+        var container = document.getElementById("image-container");
+        function change_img(image) {
+            container.src = image.src;
+        }
+
+    </script>
+</body>
+</html>
